@@ -1,8 +1,10 @@
 package socialnetwork.user.mapper;
 
+import org.springframework.stereotype.Component;
 import socialnetwork.user.dto.UserResponse;
 import socialnetwork.user.model.User;
 
+@Component
 public class UserMapper {
     public UserResponse toUserResponse(User user) {
         return new UserResponse(
