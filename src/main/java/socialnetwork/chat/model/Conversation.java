@@ -6,19 +6,19 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.Instant;
+import java.util.List;
 
-@Document("messages")
+@Document("conversations")
 @Getter
 @Setter
-public class Message {
+public class Conversation {
 
     @Id
     private String id;
-    private String conversationId;
-    private String senderId;
-    private String senderUsername;
-    private String content;
-    private Instant sentAt;
-    private boolean edited;
-    private boolean deleted;
+
+    private List<String> participantIds;
+
+    private Instant createdAt;
+
+    private Instant lastMessageAt;
 }
