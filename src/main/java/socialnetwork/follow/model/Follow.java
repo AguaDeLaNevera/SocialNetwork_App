@@ -16,6 +16,8 @@ public class Follow {
     @Id
     private String id;
     private String followerId;
+    private String followerUsername;
     private String followedId;
+    private String followedUsername;
     private Instant createdAt;
 }
