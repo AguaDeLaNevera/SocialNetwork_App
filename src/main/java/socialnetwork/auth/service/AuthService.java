@@ -15,7 +15,19 @@ public class AuthService {
         this.userRepository = userRepository;
     }
 
-    public User saveUser(@RequestBody CreateUserRequest request) {
+    public User saveUser(String username, String email, String password) {
+        User user = new User();
+        user.setUsername(username);
+        user.setEmail(email);
+        user.setPassword(password);
         return userRepository.save(user);
+    }
+
+    public User login(String username, String password){
+        User user = userRepository.findByUsername(username).orElse(null);
+        if(user != null && user.getPassword().equals(password)){
+            return user;
+        }
+        return null;
     }
 }

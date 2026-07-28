@@ -1,7 +1,6 @@
 package socialnetwork.user.dto;
 
 public record UserResponse (
-
         String id,
         String username,
         String email,
