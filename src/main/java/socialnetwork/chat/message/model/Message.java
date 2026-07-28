@@ -1,4 +1,4 @@
-package socialnetwork.chat.model;
+package socialnetwork.chat.message.model;
 
 import lombok.Getter;
 import lombok.Setter;

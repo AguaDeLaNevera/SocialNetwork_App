@@ -1,4 +1,4 @@
-package socialnetwork.chat.dto;
+package socialnetwork.chat.conversation.dto;
 
 public record CreateConversationRequest(
         String creatorUsername,

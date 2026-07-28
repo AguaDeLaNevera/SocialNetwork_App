@@ -1,11 +1,11 @@
-package socialnetwork.chat.service;
+package socialnetwork.chat.message.service;
 
 import org.springframework.stereotype.Service;
-import socialnetwork.chat.dto.CreateMessageRequest;
-import socialnetwork.chat.model.Conversation;
-import socialnetwork.chat.model.Message;
-import socialnetwork.chat.repository.ConversationRepository;
-import socialnetwork.chat.repository.MessageRepository;
+import socialnetwork.chat.message.dto.CreateMessageRequest;
+import socialnetwork.chat.conversation.model.Conversation;
+import socialnetwork.chat.message.model.Message;
+import socialnetwork.chat.conversation.repository.ConversationRepository;
+import socialnetwork.chat.message.repository.MessageRepository;
 import socialnetwork.user.model.User;
 
 import java.time.Instant;

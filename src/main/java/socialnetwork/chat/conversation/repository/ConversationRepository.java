@@ -1,7 +1,7 @@
-package socialnetwork.chat.repository;
+package socialnetwork.chat.conversation.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
-import socialnetwork.chat.model.Conversation;
+import socialnetwork.chat.conversation.model.Conversation;
 
 import java.util.List;
 

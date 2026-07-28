@@ -1,4 +1,4 @@
-package socialnetwork.chat.dto;
+package socialnetwork.chat.message.dto;
 
 import java.time.Instant;
 
