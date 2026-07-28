@@ -26,6 +26,13 @@ public class FollowService {
                                User following,
                                CreateFollowRequest request) {
 
+        if(followRepository.findByFollowerIdAndFollowingId(follower.getId(), following.getId()).isPresent()){
+            return null;
+        }
+        if (follower.getId().equals(following.getId())) {
+            return null;
+        }
+
         Follow follow = new Follow();
 
         follow.setFollowerId(follower.getId());
