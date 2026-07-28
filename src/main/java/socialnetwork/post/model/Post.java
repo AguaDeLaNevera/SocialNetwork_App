@@ -22,5 +22,5 @@ public class Post {
     private long likeCount;
     private long commentCount;
     private Instant createdAt;
-    private Instant updatedAt;
+    private boolean edited;
 }
