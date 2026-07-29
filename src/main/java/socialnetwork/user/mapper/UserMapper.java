@@ -8,6 +8,7 @@ import socialnetwork.user.model.User;
 public class UserMapper {
     public UserResponse toUserResponse(User user) {
         return new UserResponse(
+                user.getId(),
                 user.getUsername(),
                 user.getEmail(),
                 user.getDisplayName(),
